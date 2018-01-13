@@ -7,7 +7,7 @@ import retrofit2.http.Query;
 
 public interface PokemonService {
 
-    //API Method to get 50 PokemonResponse
+    //API Method to get Pokemon
     @GET("/api/v2/pokemon/")
     Call<PokemonResponse> getPokemon(@Query("limit") int limit);
 }
