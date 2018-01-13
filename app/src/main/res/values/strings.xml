@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="image_link">http://pokeapi.co/media/sprites/pokemon/%d.png</string>
+</resources>
