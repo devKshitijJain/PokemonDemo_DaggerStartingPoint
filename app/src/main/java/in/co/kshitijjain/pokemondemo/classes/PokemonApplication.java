@@ -37,12 +37,14 @@ public class PokemonApplication extends Application {
 
         Context context = this;
 
-        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
+        HttpLoggingInterceptor.Logger logger = new HttpLoggingInterceptor.Logger() {
             @Override
             public void log(@NonNull String message) {
                 Timber.i(message);
             }
-        });
+        };
+
+        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(logger);
 
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
 
