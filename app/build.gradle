@@ -47,4 +47,8 @@ dependencies {
 
     //Timber
     implementation 'com.jakewharton.timber:timber:4.6.0'
+
+    //Dagger
+    compile "com.google.dagger:dagger:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
 }
